@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>🎓 Codetopia Community Student Registration Form</h1>
+  <p><strong>Welcome to Codetopia Community! </strong> Please fill out the registration form to enroll in our wed development courses</p>
+  <hr>
+
+  <form action="">
+     <fieldset>
+      <legend><strong>📋 Personal Information</strong></legend> <br>
+      <label>First Name <span class="required">*</span> <br>
+        <input type="text" name="first_name" placeholder="Enter your first name" required>
+      </label> <br><br>
+      <label>Last Name <span class="required">*</span> <br>
+        <input type="text" name="last_name" placeholder="Enter your last name" required>
+      </label> <br><br>
+      <label>Email Address <span class="required">*</span> <br>
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label> <br><br>
+      <label>Phone Number <br>
+        <input type="tel" name="phone" placeholder="123-456-7890">
+      </label> <br><br>
+      <label>Date of Birth <span class="required">*</span> <br>
+        <input type="date" name="dob" required>
+      </label> <br><br>
+      <label>Age <br>
+        <input type="number" name="age" placeholder="Enter your age">
+      </label> <br><br>
+      <label>Gender: <br>
+        <input type="radio" name="gender" value="Male"> Male <br>
+        <input type="radio" name="gender" value="Female"> Female <br>
+        <input type="radio" name="gender" value="Other"> Other <br>
+        <input type="radio" name="gender" value="Prefer not to say"> Prefer not to say <br>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>🏠 Address Information</strong></legend>  <br>
+      <label>Street Address <span class="required">*</span> <br> 
+        <input type="text" name="street" placeholder="123 Main Street" required>
+      </label> <br><br>
+      <label>City <span class="required">*</span> <br>
+        <input type="text" name="city" placeholder="Enter your city" required>
+      </label> <br><br>
+      <label>State/Province <br>
+        <select name="state">
+          <option>-- Select State --</option>
+        </select>
+      </label><br><br>
+      <label>ZIP/Postal Code <br>
+        <input type="text" name="zip" placeholder="e.g., 12345 or A1A 1A1">
+      </label><br><br>
+      <label>Country <br>
+        <select name="country">
+          <option>United States</option>
+          <option>Ghana</option>
+          <option>Canada</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>🎓 Education Background</strong></legend> <br>
+      <label>Highest Education Level <span class="required">*</span> <br>
+        <select name="education" required>
+          <option>-- Select Education Level --</option>
+        </select>
+      </label> <br><br> 
+      <label>Field of Study <br>
+        <input type="text" name="field">
+      </label> <br><br>
+      <label>Graduation Year <br>
+        <input type="number" name="grad_year" value="2024">
+      </label> <br><br>
+      <label>School/University Name <br>
+        <input type="text" name="school">
+      </label> <br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>💻 Programming Experience</strong></legend> <br>
+      <label><strong>Current Programming Experience Level</strong> <span class="required">*</span></label> <br>
+      <input type="radio" name="exp" value="beginner"> Absolute Beginner<br>
+      <input type="radio" name="exp" value="some"> Some Experience<br>
+      <input type="radio" name="exp" value="intermediate"> Intermediate<br>
+      <input type="radio" name="exp" value="advanced"> Advanced<br>
+
+      <label><strong>Programming Languages You Know (Check all that apply):</strong></label> <br>
+      <input type="checkbox" name="lang" value="HTML"> HTML<br>
+      <input type="checkbox" name="lang" value="CSS"> CSS<br>
+      <input type="checkbox" name="lang" value="JavaScript"> JavaScript<br>
+      <input type="checkbox" name="lang" value="Python"> Python<br>
+      <input type="checkbox" name="lang" value="Java"> Java<br>
+      <input type="checkbox" name="lang" value="C++"> C++<br>
+      <input type="checkbox" name="lang" value="PHP"> PHP<br>
+      <input type="checkbox" name="lang" value="none"> None of the above<br>
+
+      <label for="vol">How many years have you been coding</label>
+       <input type="range" id="vol" name="vol" min="0" max="50"> <br>
+       <output for="myRange" id="rangeValue"><strong>Years:0</strong></output>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>📚 Course Selection</strong></legend> <br>
+      <label>Primary Course Interest <span class="required">*</span> <br>
+        <select name="course" required>
+          <option>-- Select Course --</option>
+        </select>
+      </label> <br><br>
+      <label><strong>Preferred Learning Schedule:</strong></label> <br>
+      <input type="radio" name="schedule" value="weekdays"> Weekdays (Monday-Friday)<br>
+      <input type="radio" name="schedule" value="weekends"> Weekends (Saturday-Sunday)<br>
+      <input type="radio" name="schedule" value="evenings"> Evenings (After 6 PM)<br>
+      <input type="radio" name="schedule" value="flexible"> Flexible Schedule<br> <br>
+      <label>Preferred Start Date<br>
+        <input type="date" name="start_date">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>🎯 Goals & Motivation</strong></legend> <br>
+      <label>What are your career goals? <span class="required">*</span></label> <br>
+      <textarea name="career_goals" maxlength="500" placeholder="Tell us about your career aspirations, what
+      you hope to achieve, and how programming fits into your goals... (50-500 characters)" required></textarea><br>
+      <span></span>Minimum 50 characters, maximum 500 characters</span> <br><br>
+      
+
+      <label>What motivates you to learn programming?</label> <br>
+      <textarea name="motivation" placeholder="Share what drives your interest in technology and programming..."></textarea> <br>
+
+      <label>How many hours per week can you commit to studying?</label> <br>
+      <input type="number" name="study_hours" placeholder="Enter here"> <br><br>
+      <label><strong>Learning Style Preferences (Check all that apply):</strong></label> <br>
+      <input type="checkbox" value="video"> Video Tutorials<br>
+      <input type="checkbox" value="hands-on"> Hands-on Projects<br>
+      <input type="checkbox" value="reading"> Reading Documentation<br>
+      <input type="checkbox" value="group"> Group Discussions<br>
+      <input type="checkbox" value="mentoring"> One-on-One Mentoring<br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>🖥️ Technical Information</strong></legend> <br>
+      <label>Operating System <br>
+        <select name="os">
+          <option>-- Select OS --</option>
+          <option>Windows</option>
+          <option>MacOS</option>
+          <option>Linux</option>
+        </select>
+      </label> <br><br>
+      <label>Internet Connection Speed <br>
+        <select name="speed">
+          <option>-- Select Speed --</option>
+        </select>
+      </label> <br><br>
+      <label><strong>Do you have access to:</strong></label> <br>
+      <input type="checkbox" name="access" value="computer"> Desktop/Laptop Computer<br>
+      <input type="checkbox" name="access" value="webcam"> Webcam<br>
+      <input type="checkbox" name="access" value="mic"> Microphone<br>
+      <input type="checkbox" name="access" value="quiet"> Quiet Study Space<br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>📝 Additional Information</strong></legend> <br>
+      <label>Upload Resume (Optional) <br>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx">
+      </label> <br> Accepted formats:.pdf,.doc,.docx
+       <br><br>
+      <label>Portfolio Website URL <br>
+        <input type="url" name="portfolio" placeholder="https://yourportfolio.com">
+      </label> <br><br>
+      <label>GitHub Profile URL <br>
+        <input type="url" name="github" placeholder="https://github.com/yourusername">
+      </label> <br><br>
+      <label>LinkedIn Profile URL <br>
+        <input type="url" name="linkedin" placeholder="https://linkedin.com/in/yourusername">
+      </label> <br><br>
+      <label>How did you hear about Codetopia Community? <br>
+        <select name="source">
+          <option>-- Select Source --</option>
+        </select>
+      </label> <br><br>
+      <label>Additional Comments or Questions:</label> <br>
+      <textarea name="comments" placeholder="Any additional information, special requirements, questions you'd like to share..."></textarea> <br><br>
+      <label>Emergency Contact Name <br>
+        <input type="text" name="emergency_name" placeholder="Full name of emergency contact">
+      </label> <br><br>
+      <label>Emergency Contact Phone <br>
+        <input type="tel" name="emergency_phone" placeholder="Emergency contact phone number">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>✅ Agreement & Terms</strong></legend> <br>
+      <label><input type="checkbox" name="agreement" required> I certify that all information provided is accurate and complete</label> <br><br>
+      <label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label> <br><br>
+      <label><input type="checkbox" name="privacy" required> I agree to the Privacy Policy</label> <br><br>
+      <label><input type="checkbox" name="updates"> I agree to receive course updates and promotional emails</label><br><br>
+      <label><input type="checkbox" name="consent"> I consent to sharing my success stories and projects</label><br><br>
+
+      <label>Digital Signature(Type your fullname)*<br>
+        <input type="text" name="signature" placeholder="Type your full legal name"> <br><br>
+      </label>
+      <label>Date* <br>
+        <input type="date" name="signature_date"> <br><br>
+      </label>
+    </fieldset> <br>
+
+     <div class="buttons">
+      <button type="submit">🎓Submit Registration</button>
+      <button type="reset">🔁Reset Form</button>
+      <button type="button">💾Save as Draft</button>
+    </div>
+  </form>
+   <hr>
+
+  <h3>📞 Need Help?</h3>
+  <h4>Contact Codetopia Community Support:</h4>
+  <p>Email: <a href="mailto:support@codetopiacommunity.com">support@codetopiacommunity.com</a><br>
+     Phone: +233-555-123-4567<br>
+     Hours: Monday, Wednesday, Friday 9 PM - 11 PM GMT</p>
+
+  <p>📍 Campus Locations: Jupiter 🚀 • Japan 🗾 • Tesano  • The Moon 🌕 • Seth's Bedroom 🤣</p>
+  <footer>
+    <p>© 2024 Codetopia Community. All rights reserved | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Accessibility</a>
+    </p>
+  </footer>
+</body>
+</html>
